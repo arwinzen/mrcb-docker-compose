@@ -14,7 +14,7 @@ The repository acts as the parent directory for the mrcb-analytics-backend proje
 
 Once the source files have been cloned, run the following commands to build and run the project:
 
-''' bash
+``` bash
 docker compose build mrcb
 docker compose up -d
-'''
+```
