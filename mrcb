@@ -6,11 +6,11 @@
 
 # Run an artisan command
 artisan () {
-  docker compose run --rm mrcb php artisan "${@:1}" "${@:2}"
+  docker compose run --rm mrcb php artisan "${@}"
 }
 
 test() {
-  docker compose exec mrcb php artisan test "${@:1}"
+  docker compose exec mrcb php artisan test "${@}"
 }
 
 # Build all of the images or the specified one
@@ -20,7 +20,7 @@ build () {
 
 # Run a Composer command
 composer () {
-    docker compose run --rm mrcb composer "${@:1}"
+    docker compose run --rm mrcb composer "${@}"
 }
 
 # Remove the entire Docker environment
